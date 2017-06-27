@@ -1,0 +1,402 @@
+/* Global Layout Set-up */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #8a8a8a;
+  margin:0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#ccc;
+  display: block;
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: .3px;
+}
+
+hr {
+	margin: 0 15px;
+	border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* section styles */
+
+h1{
+  margin-bottom: 30px;
+}
+header {
+  margin:20px 0 30px;
+  color:#808080;
+}
+
+/* navigation */
+
+#navigation li {
+	margin: 20px 0 20px;
+}
+
+#navigation a {
+	font-size: 1em;
+  color:#808080;
+  margin-bottom: 20px;
+}
+
+#navigation a:hover {
+	color: #000;
+}
+
+
+
+
+/* Introduction section*/
+
+#introduction {
+  margin: 60px 0 0 30px;
+}
+
+#introduction img {
+	padding: 5px 30px;
+	margin-bottom: 5px;
+}
+
+#introduction p {
+	margin-top: 10px;
+  margin-bottom: 80px;
+	padding: 0 5px;
+	color: #a0a0a0;
+}
+
+/*skills*/
+
+
+/*** Skills section ***/
+
+#skills {
+	padding-bottom: 30px;
+	margin: 30px auto;
+  color:#000;
+}
+
+#skill-list li:nth-child(odd) {
+	background-color: #F0AD4E;
+}
+
+#skill-list li:nth-child(even) {
+	background-color: #0275d8 ;
+}
+
+#skill-list li {
+	padding: 10px 30px;
+	margin: 10px 30px;
+	border-radius: 5px;
+}
+
+
+/* Portfolio section*/
+
+
+.image {
+	margin: 0 auto;
+  padding: 0;
+}
+
+#portfolio p {
+	margin-bottom: 40px;
+	padding: 0 15px ;
+	color: #a0a0a0;
+}
+
+h3 {
+	padding: 30px 0;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin: 20px auto 10px;
+	color: #707070;
+	font-weight: normal;
+}
+
+#gallery li:last-child {
+	padding-bottom: 30px;
+}
+
+/* ontact section */
+
+#contact h3 {
+	padding-top: 30px;
+}
+
+
+#contact p {
+	padding: 0 15px 30px;
+	color:  #a0a0a0;
+}
+
+#contact ul {
+	margin-bottom: 50px;
+}
+
+#contact li {
+	color: #707070;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+#contact span {
+	color: #a0a0a0;
+	padding: 0 10px;
+	font-weight: normal;
+}
+
+
+/* footer*/
+
+footer {
+	padding: 20px;
+}
+
+footer h3,
+footer a {
+	display: inline-block;
+	padding-bottom: 30px;
+	font-size: 0.6em;
+	color: #000;
+}
+
+footer h3 {
+	margin: 0;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer-link {
+	float: right;
+}
+
+#footer-nav {
+	display: none;
+}
+
+.clearfix:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+/******************************
+	Media Query
+******************************/
+@media (min-width: 768px) {
+	/*** Header section ***/
+	header,
+	#navigation,
+	#introduction {
+		display: flex;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		margin-top: 20px;
+	}
+
+
+	/*** Navigation section ***/
+  #navigation li {
+		float: left;
+		background-color: transparent;
+		padding-right: 20px;
+	}
+
+
+	/*** Introduction section ***/
+	#introduction {
+		flex-direction: row-reverse;
+	}
+
+	#introduction p {
+		margin-left: 30px;
+		margin-top: 0;
+		padding: 0;
+		font-size: 20px;
+		text-align: left;
+	}
+
+	 #introduction img {
+		max-width: 300px;
+		max-height: 200px;
+		padding: 0;
+		margin: auto 30px;
+	}
+
+
+	/*** Skill section ***/
+	#skill-list {
+		display: inline-block;
+	}
+
+	#skill-list li {
+		float: left;
+	}
+
+
+	/*** Portfolio section ***/
+	#gallery {
+		display: inline-block;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	#gallery li {
+		float: left;
+		max-width: 50%;
+		min-height: 450px;
+	}
+
+	#gallery p {
+		padding: 20px 30px;
+		margin: 0;
+	}
+
+	.image {
+		padding: 0 5px;
+	}
+
+
+	/*** Contact section ***/
+	#contact p {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 60px;
+	}
+
+	#contact p,
+	#contact ul {
+		font-size: 20px;
+	}
+
+	#contact p,
+	hr,
+	footer {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+
+	/*** Footer section ***/
+
+	footer {
+		padding: 20px 0;
+	}
+
+	footer h3 {
+		padding-top: 4px;
+	}
+
+  .footer-link {
+		display: none;
+	}
+
+	#footer-nav {
+		display: block;
+		float: right;
+	}
+
+	#footer-nav li {
+		float: left;
+		margin-left: 30px;
+		overflow: hidden;
+}
+}
+
+
+@media (min-width: 1024px) {
+	#portfolio h3 {
+		padding: 50px 0;
+	}
+
+  header {
+		flex-direction: row;
+    justify-content: space-between;
+	}
+
+	h1 {
+		margin-left: 30px;
+	}
+
+	header,
+	#introduction,
+	#skills,
+	#portfolio,
+	#contact {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	hr,
+	footer {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+
+	#introduction {
+		margin-bottom: 60px;
+	}
+
+	#introduction img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	#navigation {
+		margin: 0;
+	}
+
+	#gallery li {
+		max-width: 33.33%;
+		min-height: 380px;
+	}
+
+	#gallery p {
+		padding: 0 10px 60px;
+	}
+
+	.image {
+		padding: 0 10px;
+	}
+
+	#contact p {
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+}
