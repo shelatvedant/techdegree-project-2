@@ -175,35 +175,44 @@ h4 {
 
 /* footer*/
 
-footer {
+/*footer {
 	padding: 20px;
-}
+}*/
 
-footer h3,
+/*footer h3,
 footer a {
 	display: inline-block;
-	padding-bottom: 30px;
+	font-size: 0.6em;
+	color: #000;
+}*/
+.name, .footer-link{
+  width:46%;
+  display: block;
 	font-size: 0.6em;
 	color: #000;
 }
 
-footer h3 {
-	margin: 0;
+.footer-link {
+	float: right;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.name {
 	float: left;
+  padding: 0;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
-.footer-link {
-	float: right;
-}
+
 
 #footer-nav {
 	display: none;
 }
 
-.clearfix:after{
-  content: " ";
+.group:after{
+  content: "";
   display: table;
   clear: both;
 }
@@ -326,6 +335,11 @@ footer h3 {
   .footer-link {
 		display: none;
 	}
+
+  .name{
+    font-size: .9em;
+    margin-left: -30px;
+  }
 
 	#footer-nav {
 		display: block;
