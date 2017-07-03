@@ -13,7 +13,6 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   color: #8a8a8a;
-  margin:0 auto;
 }
 
 li {
@@ -158,12 +157,14 @@ h4 {
 
 #contact ul {
 	margin-bottom: 50px;
+
 }
 
 #contact li {
 	color: #707070;
 	margin-bottom: 20px;
 	font-weight: bold;
+
 }
 
 #contact span {
@@ -187,7 +188,7 @@ footer a {
 }*/
 .name, .footer-link{
   width:46%;
-  display: block;
+  display: inline-block;
 	font-size: 0.6em;
 	color: #000;
 }
