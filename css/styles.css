@@ -72,6 +72,7 @@ header {
 
 #introduction {
   margin: 60px 0 0 30px;
+  padding-right: 15px;
 }
 
 #introduction img {
@@ -91,10 +92,14 @@ header {
 
 /*** Skills section ***/
 
+h3{
+  text-align: center;
+}
 #skills {
 	padding-bottom: 30px;
 	margin: 30px auto;
   color:#000;
+  padding-right: 40px;
 }
 
 #skill-list li:nth-child(odd) {
@@ -117,12 +122,13 @@ header {
 
 .image {
 	margin: auto;
-  padding: 0;
+  padding-right: 40px;
 }
 
 #portfolio p {
 	margin-bottom: 40px;
-	padding: 0 15px ;
+	/*padding: 0 10px ;*/
+  padding-right: 40px;
 	color: #a0a0a0;
 }
 
@@ -135,6 +141,7 @@ h3 {
 h4 {
 	font-size: 1.2em;
 	margin: 20px auto 10px;
+  padding-right: 40px;
 	color: #707070;
 	font-weight: normal;
 }
@@ -151,12 +158,14 @@ h4 {
 
 
 #contact p {
-	padding: 0 15px 30px;
+	padding: 0 40px 30px;
 	color:  #a0a0a0;
 }
 
 #contact ul {
 	margin-bottom: 50px;
+  text-align: center;
+  padding-right: 40px;
 
 }
 
@@ -286,6 +295,7 @@ footer a {
 		display: inline-block;
 		margin-left: 25px;
 		margin-right: 25px;
+    padding-right: 40px;
 	}
 
 	#gallery li {
